@@ -4,7 +4,7 @@
 
 #ALTER TABLE risk_grid
 #ADD SPATIAL INDEX idx_geom (geom);
-
+use londonsafetymap;
 SELECT log_risk_score
 FROM risk_grid
 WHERE ST_Contains(
